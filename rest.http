@@ -1,0 +1,41 @@
+GET http://localhost:3000/products
+
+### Create a product
+
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+   "name": "Apple Watch + GPS + GSM",
+   "price": 1799
+}
+
+### GET product by id
+GET http://localhost:3000/products/5ea547e67ca5b71bf4c2166c
+
+name
+
+### UPDATE product by id
+PATCH http://localhost:3000/products/5ea547e67ca5b71bf4c2166c
+Content-Type: application/json
+
+{
+   "price": 2799
+}
+### DELETE product by id
+DELETE http://localhost:3000/products/5ea547e67ca5b71bf4c2166c
+
+### 404 route Not Found
+GET http://localhost:3000/abc_xyz
+
+###
+GET http://localhost:3000/test?name=iMac&price=2399
+
+###
+GET http://localhost:3000/test/470987096976/iMac
+
+###
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=iMac&price=499
