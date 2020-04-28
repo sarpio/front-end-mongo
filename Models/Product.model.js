@@ -6,11 +6,28 @@ const ProductSchema = new Schema({
         type: String,
         required: true
     },
-    price: {
-        type: Number,
+    address: {
+        type: String,
+        required: true
+    },
+    firstname: {
+        type: String,
+        required: true
+    },
+    lastname: {
+        type: String,
+        required: true
+    },
+    email: {
+        type: String,
+        required: true
+    },
+    phone: {
+        type: String,
         required: true
     }
 });
 
-const Product = mongoose.model('product', ProductSchema);
+// suppliers - collection name
+const Product = mongoose.model('suppliers', ProductSchema);
 module.exports = Product;

@@ -1,26 +1,29 @@
-GET http://localhost:3000/products
+GET http://localhost:3000/suppliers
 
 ### Create a product
-
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-   "name": "Apple Watch + GPS + GSM",
-   "price": 1799
+   "name": "Telvid",
+   "address": "Wąska 3a, 09-221 Łódź",
+   "firstname": "Andrzej",
+   "lastname": "Łuczak",
+   "email": "andrzej@telvid.com.pl",
+   "phone": "+48606505404"
 }
 
 ### GET product by id
-GET http://localhost:3000/products/5ea547e67ca5b71bf4c2166c
+GET http://localhost:3000/products/5ea5b4143b09112c9162300b
 
 name
 
 ### UPDATE product by id
-PATCH http://localhost:3000/products/5ea547e67ca5b71bf4c2166c
+PATCH http://localhost:3000/products/5ea5b4143b09112c9162300b
 Content-Type: application/json
 
 {
-   "price": 2799
+   "address": "Wąska 33a, 09-223 Łódź"
 }
 ### DELETE product by id
 DELETE http://localhost:3000/products/5ea547e67ca5b71bf4c2166c
